@@ -1,7 +1,11 @@
 # MessagingSystem
 Java Spring boot project in which one user can do comment to another user
+In this project , I have done curd operation by adding comment, getting comments, updating comments , deleting comments.
+I have also done almost 15 input request from postman.
+This project is in MVC pattern in which request is come from postman tool in api's format and api's is defined in controller and after doing validation in user name it will go to the service class in which business logics are been written.
+From service it will go to repository of both table ie. user and comment and run certain queries by their on according to function ie. save, delete, findById(we can customized aswell).
 
-In this project, there is curd operations performed
+I have also created DTO(Data Transfer Object) class in which only required information is available which is used to show or get data from user (postman request body)
 
 Tables- 1) User (userid,name,lastActiveDateTime)
         2) Comment(commentid, message, commentFrom, commentTo,commentDateTime,postedByUserId)
